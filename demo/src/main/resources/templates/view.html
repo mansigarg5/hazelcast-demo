@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Cache</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+<div style="font-size: 30px;padding-top: 100px;padding-bottom: 60px;" th:if="${data} != null" th:text="'The Cache Content is : ' + ${data}"></div>
+<div style="font-size: 30px;padding-top: 100px;padding-bottom: 60px;" th:if="${data} == null">There is no content in the cache !!</div>
+<button type="button" class="btn btn-primary btn-lg" style="padding: 30px 50px;margin-right: 20px;"><a href="/" style="color: white;">Go to Home</a></button>
+</center>
+</body>
+</html>
